@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bthomp56"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-01 10:41:57 AM"/>
+        <attribute name="created" value="YnRob21wNTY7V0lOMTBJVC0wMDAyOzIwMjItMDMtMzA7MDU6MTI6MTAgUE07Mjc1Mw=="/>
+        <attribute name="edited" value="YnRob21wNTY7V0lOMTBJVC0wMDAyOzIwMjItMDMtMzA7MDU6NDQ6MjYgUE07MTM7MjkyNA=="/>
+        <attribute name="edited" value="YnRob21wNTY7V0lOMTBJVC0wMDYxOzIwMjItMDMtMzE7MTA6MDA6MTQgQU07MTA7Mjg5Nw=="/>
+        <attribute name="edited" value="YnRob21wNTY7V0lOMTBJVC0wMDQ2OzIwMjItMDMtMzE7MDM6NDQ6NDQgUE07ODsyODg3"/>
+        <attribute name="edited" value="YnRob21wNTY7V0lOMTBJVC0wMDM2OzIwMjItMDQtMDE7MTA6NDE6NTcgQU07MTI7MjkxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Name: Brian Thompson &#13;&#10;Date: 04/01/2022"/>
+            <declare name="BMI, weight, height, kilograms, meters" type="Real" array="False" size=""/>
+            <assign variable="height" expression="0"/>
+            <assign variable="weight" expression="0"/>
+            <output expression="&quot;Welcome to the BMI Calculator Program!&quot;" newline="True"/>
+            <output expression="&quot;Please type your height in inches&quot;" newline="True"/>
+            <input variable="height"/>
+            <output expression="&quot;Please type your weight in pounds&quot;" newline="True"/>
+            <input variable="weight"/>
+            <assign variable="BMI" expression="(0.453592*weight)/(height/39.37)^2"/>
+            <assign variable="kilograms" expression="weight*0.453592"/>
+            <assign variable="meters" expression="height/39.37"/>
+            <output expression="&quot;Your weight in kilograms is &quot; &amp; kilograms" newline="True"/>
+            <output expression="&quot;Your height in meters is &quot; &amp; meters" newline="True"/>
+            <output expression="&quot;Your BMI is &quot; &amp; BMI" newline="True"/>
+            <if expression="BMI&gt;30.0">
+                <then>
+                    <output expression="&quot;According to your BMI, you are in the Obesity category&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="BMI&lt;18.5">
+                <then>
+                    <output expression="&quot;Accoring to your BMI, you are in the Underweight category&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
